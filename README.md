@@ -39,7 +39,9 @@ In this model, cosine similarity between given movie and all other movies is com
 
 ### Matrix Factorization using SVD
 The Netflix prize algorithm is used as optimization equation.
-$\large \sum_{r_{ui} \in R_{train}} \left(r_{ui} - \hat{r}_{ui} \right)^2 +
-\lambda\left(b_i^2 + b_u^2 + ||q_i||^2 + ||p_u||^2\right) $
+* Suprise library has built in implementation of this algorithm
+* GridSearchCV is used to find the best hyperparameters: learning_rate, number_of_epochs and regularisation term
+* The cross validation gave a result of 0.9 RMSE.
+* The trained model was used to predict rating of known value and the ratings were close to each other.
 
 
