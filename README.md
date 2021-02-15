@@ -56,8 +56,19 @@ The Netflix prize algorithm is used as optimization equation.
 
 ![PredictedRating](https://github.com/VIVEK-JADHAV/MovieRecommendation/blob/main/Images/Prediction.JPG)
 
+where:
+* rui :Actual rating by user u on movie i
+* r^ui: Predicted rating for user u on movie i
+* μ : Global average of all the ratings
+* bu : Bias corresponding to user u
+* bi : Bias corresponding to movie i
+* qi : Vector corresponding to movie i
+* pu : Vector corresponding to user u
+* λ : Regularization term
+
 * Suprise library has built in implementation of this algorithm
-* GridSearchCV is used to find the best hyperparameters: learning_rate, number_of_epochs and regularisation term
+* GridSearchCV is used to find the best hyperparameters: learning_rate, number_of_epochs and regularisation term.
+* bu,bi,qi and pu are learnt through Gradient Descent algorithm.
 * The cross validation gave a result of 0.9 RMSE.
 * The trained model was used to predict rating of known value and the ratings were close to each other.
 
