@@ -30,4 +30,16 @@ Using the weighted ratings formula of IMDB, top movies in that particular genre 
 In a nutshell, this formula gives higher priority to movies which have more votes and higher rating and 
 if the votes are less than threshold, it pushes towards global mean of ratings.
 
+### User-User Similarity
+In this model,ratings of the user is used to find cosine similarity between a given user and all other users.
+Movies of top similar users is listed out. From this list, movies not rated by the given user is recommended.
+
+### Item-Item Similarity
+In this model, cosine similarity between given movie and all other movies is computed and top similar movies are recommended.
+
+### Matrix Factorization using SVD
+The Netflix prize algorithm is used as optimization equation.
+\sum_{r_{ui} \in R_{train}} \left(r_{ui} - \hat{r}_{ui} \right)^2 +
+\lambda\left(b_i^2 + b_u^2 + ||q_i||^2 + ||p_u||^2\right)
+
 
