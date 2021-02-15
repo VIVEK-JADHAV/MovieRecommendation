@@ -39,7 +39,7 @@ In this model, cosine similarity between given movie and all other movies is com
 
 ### Matrix Factorization using SVD
 The Netflix prize algorithm is used as optimization equation.
-$$ \sum_{r_{ui} \in R_{train}} \left(r_{ui} - \hat{r}_{ui} \right)^2 +
-\lambda\left(b_i^2 + b_u^2 + ||q_i||^2 + ||p_u||^2\right)$$
+$\large \sum_{r_{ui} \in R_{train}} \left(r_{ui} - \hat{r}_{ui} \right)^2 +
+\lambda\left(b_i^2 + b_u^2 + ||q_i||^2 + ||p_u||^2\right) $
 
 
