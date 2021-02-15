@@ -1,7 +1,7 @@
 # Movie Recommendation System
 This project has various ways of implementing recommendation system.
 The dataset used is MovieLens dataset from Kaggle. The files I have used are:
-* movies_metadata.csv: It has all the information about the movie like movieId,title,genre,language,vote_average,vote_count
+* movies_metadata.csv: It has all the information about the movie like movieId, title, genre, language, vote_average, vote_count
 * link.csv: This file connects movieId with IMDBId
 * ratings_small.csv: This file has ratings given by different users for different movies. It is a small portion of original file.
 
